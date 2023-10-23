@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Screen</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/grid.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/ResponsiveMenu.css">
+</head>
+<body>
+
+    <!-- Responsive Menu -->
+    <aside>
+        <span class="menuicon" id="menuicon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </span>
+        <div id="responsiveNav">
+            <nav class="responsiveNav">
+                <ul>
+                    <li class="nav-items li-active"onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-chart-simple"></i>Tabels</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-credit-card"></i>Billing</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-wrench"></i>RTL</a></li>
+                    <h3>ACCOUNT PAGES</h3>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-user"></i>Profile</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-file"></i>Sign In</a></li>
+                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-rocket"></i>Sign Up</a></li>
+                </ul>
+                <div id="help">
+                    <div class="help">
+                        <a href="#"><i class="fa-solid fa-question"></i></a>
+                        <h2>Need help?</h2>
+                        <p>Please check our docs</p>
+                        <button type="button">DOCUMENTION</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- Figma -->
+    <div id="figma">
+        <a href="#" id="toTop">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-2">
+                    <div id="menu">
+                        <div class="logo">
+                            <img src="img/logo-creative-tim-black.png" alt="Logo">
+                            <h1>PURITY UI DASHBOARD</h1>
+                        </div>
+                        <div class="navbar">
+                            <nav>
+                                <ul>
+                                    <li class="nav-items li-active"onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-chart-simple"></i>Tabels</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-credit-card"></i>Billing</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-wrench"></i>RTL</a></li>
+                                    <h3>ACCOUNT PAGES</h3>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-user"></i>Profile</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-file"></i>Sign In</a></li>
+                                    <li class="nav-items" onclick="changeActive(this)"><a href="#"><i class="fa-solid fa-rocket"></i>Sign Up</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="help">
+                            <div class="help">
+                                <a href="#"><i class="fa-solid fa-question"></i></a>
+                                <h2>Need help?</h2>
+                                <p>Please check our docs</p>
+                                <button type="button">DOCUMENTION</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10">
+                    <div id="header">
+                        <div class="header">
+                            <div class="pages">
+                                <h3><span>Pages</span> / Profile</h3>
+                            </div>
+                            <div class="set">
+                                <!-- <input type="search" name="search" id="search" placeholder="Type here"> -->
+                                <div class="input-set">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="search" name="search" id="search" placeholder="Type here">
+                                </div>
+                                <a href="#"><i class="fa-solid fa-user"></i>Sign In</a>
+                                <a href="#"><i class="fa-solid fa-gear"></i></a>
+                                <a href="#"><i class="fa-solid fa-bell"></i></a>
+                            </div>
+                        </div>
+                        <div id="profile">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-md-6">
+                                    <div class="profile">
+                                        <div class="profile-img">
+                                            <img src="img/Image.png" alt="">
+                                            <a href="#"><i class="fa-solid fa-pencil input-pencel"></i></a>
+                                        </div>
+                                        <div class="profile-content">
+                                            <h2>Esthera Jackson</h2>
+                                            <p>esthera@Simmmple.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="profile-list">
+                                        <ul>
+                                            <li class="Pro-list active" onclick="changeBg(this)"><a href="#"><i class="fa-solid fa-cube"></i>OVERVIEW</a></li>
+                                            <li class="Pro-list" onclick="changeBg(this)"><a href="#"><i class="fa-solid fa-file"></i>TEAMS</a></li>
+                                            <li class="Pro-list" onclick="changeBg(this)"><a href="#"><i class="fa-solid fa-wrench"></i>PROJECTS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div id="data">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="platform-setting">
+                                    <h2>Platform setting</h2>
+                                    <p>ACCOUNT</p>
+                                    <div class="platform-box">
+                                        <label class="switch">
+                                            <input type="checkbox" id="changeBtn">
+                                            <span class="slider rounded"></span>
+                                        </label>
+                                        <p>Email me when someone follows me</p>
+                                    </div>
+                                    <div class="platform-box">
+                                        <label class="switch">
+                                            <input type="checkbox" id="changeBtn">
+                                            <span class="slider rounded"></span>
+                                        </label>
+                                        <p>Email me when someone answers on my post</p>
+                                    </div>
+                                    <div class="platform-box">
+                                        <label class="switch">
+                                            <input type="checkbox" id="changeBtn">
+                                            <span class="slider rounded"></span>
+                                        </label>
+                                        <p>Email me when someone mentions me</p>
+                                    </div>
+                                    <h3>APPLICATION</h3>
+                                    <div class="platform-box">
+                                        <label class="switch">
+                                            <input type="checkbox" id="changeBtn">
+                                            <span class="slider rounded"></span>
+                                        </label>
+                                        <p>New launches and projects</p>
+                                    </div>
+                                    <div class="platform-box">
+                                        <label class="switch">
+                                            <input type="checkbox" id="changeBtn">
+                                            <span class="slider rounded"></span>
+                                        </label>
+                                        <p>Monthly product updates</p>
+                                    </div>
+                                    <div class="platform-box">
+                                        <label class="switch">
+                                            <input type="checkbox" id="changeBtn">
+                                            <span class="slider rounded"></span>
+                                        </label>
+                                        <p>Subscribe to newsletter</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="profile-information">
+                                    <h2>Profile Information</h2>
+                                    <p>Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality).</p>
+                                    <p>Full Name: <span>Alec M. Thompson</span></p>
+                                    <p>Mobile: <span>(44) 123 1234 123</span></p>
+                                    <p>Email: <span>alecthompson@mail.com</span></p>
+                                    <p>Location: <span>United States</span></p>
+                                    <p>Social Media:
+                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="conversations">
+                                    <h2>Conversations</h2>
+                                    <div class="conversation-box">
+                                        <div class="conversation-profile">
+                                            <img src="img/Image.png" alt="Image">
+                                            <div class="c-profileContent">
+                                                <h3>Esthera Jackson</h3>
+                                                <p>Hi! need more informations...</p>
+                                            </div>
+                                        </div>
+                                        <a href="#">REPLY</a>
+                                    </div>
+                                    <div class="conversation-box">
+                                        <div class="conversation-profile">
+                                            <img src="img/Image(3).png" alt="Image">
+                                            <div class="c-profileContent">
+                                                <h3>Esthera Jackson</h3>
+                                                <p>Awesome work, can you change...</p>
+                                            </div>
+                                        </div>
+                                        <a href="#">REPLY</a>
+                                    </div>
+                                    <div class="conversation-box">
+                                        <div class="conversation-profile">
+                                            <img src="img/Image(1).png" alt="Image">
+                                            <div class="c-profileContent">
+                                                <h3>Esthera Jackson</h3>
+                                                <p>Have a great afternoon...</p>
+                                            </div>
+                                        </div>
+                                        <a href="#">REPLY</a>
+                                    </div>
+                                    <div class="conversation-box">
+                                        <div class="conversation-profile">
+                                            <img src="img/Image(2).png" alt="Image">
+                                            <div class="c-profileContent">
+                                                <h3>Esthera Jackson</h3>
+                                                <p>About files I can...</p>
+                                            </div>
+                                        </div>
+                                        <a href="#">REPLY</a>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div id="card">
+                        <div class="card-title">
+                            <h2>Projects</h2>
+                            <p>Architects design houses</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="card-item">
+                                    <img src="img/Rectangle 4.png" alt="design">
+                                    <div class="card-content">
+                                        <p>Project #1</p>
+                                        <h2>Modern</h2>
+                                        <p>As Uber works through a huge amount of internal management turmoil.</p>
+                                        <div class="card-footer">
+                                            <button type="button">VIEW ALL</button>
+                                            <img src="img/Avatars Group 3 (Horizontal).png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="card-item">
+                                    <img src="img/Rectangle 44.png" alt="design">
+                                    <div class="card-content">
+                                        <p>Project #2</p>
+                                        <h2>Scandinavian</h2>
+                                        <p>Music is something that every person has his or her own
+                                            specific opinion about.</p>
+                                        <div class="card-footer">
+                                            <button type="button">VIEW ALL</button>
+                                            <img src="img/Avatars Group 3 (Horizontal).png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="card-item">
+                                    <img src="img/Rectangle 44(1).png" alt="design">
+                                    <div class="card-content">
+                                        <p>Project #3</p>
+                                        <h2>Minimalist</h2>
+                                        <p>Different people have different taste, and various
+                                            types of music.</p>
+                                        <div class="card-footer">
+                                            <button type="button">VIEW ALL</button>
+                                            <img src="img/Avatars Group 3 (Horizontal).png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="creat-item">
+                                    <a href="#"><i class="fas fa-plus"></i></a>
+                                    <h3>Create a New Project</h3>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-5">
+                    <div class="copy-right">
+                        <p>@ 2021, Made with ❤️ by <a href="#">Creative Tim</a> & <a href="#">Simmmple</a> for a better web</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Creative Tim</a></li>
+                            <li><a href="#">Simmmple</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">License</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/vendor/three.r119.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@master/dist/vanta.net.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.trunk.min.js"></script>
+    <script>
+        VANTA.NET({
+           //Add the id of your tag with the # before
+           el: "#responsiveNav",
+           //All the controles for the user
+           mouseControls: true,
+           touchControls: true,
+           gyroControls: false,
+           //Control the min-size of the animation
+           minHeight: 750.00,
+           minWidth: 200.00,
+           //Modify the sizing
+           scale: 1.00,
+           scaleMobile: 1.00,
+           //Customise the colors
+           color: 0x2d3748,
+           backgroundColor: 0X38b2ac,
+           //Customise the dots
+           points: 12.00,
+           maxDistance: 23.00,
+           spacing: 20.00
+           })
+       </script>
+</body>
+</html>
